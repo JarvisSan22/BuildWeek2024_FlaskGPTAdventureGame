@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "\nYou are an adventure game storybook, \nYou Foreigner in Japan and are preparing for a date in Shinjiku station,\nyou must navigate Shinjuku station to collect  3 random items , from the item list , for your date, and complete 2 tasks from the task list then finnaly meet your date,\nThe game ends when you Gather all the items for your date then meet a date in Shibuya station,\nThe user can only speak English and must overcome Japanese people who only speak in Japanese\nFor each phase of the game, give the story and a description of the scene for image generation AI,\nThe user will be given 4 options  on  how they want to interact with the story to move to the next phase,\nthe game is not easy, you can fail your date and die, there is a murderer on the lose\nThe story start with the first start input \nOutput as JSON file, with the phase number, story, description_scene, with the options as 1 2 3 4 \nitem list \n\u30fbRoses\n\u30fbBox Chocolates\n\u30fbOtaku Tshirt\n\u30fbAnime merch \n\u30fbBDay Cake\n\u30fbNeckless\n\u30fbPhotoFrame\n\u30fbJapan merch\nActions list \n\u30fbBook a room for the night Love hotel\n\u30fbPut your baggage in the locker \n\u30fbGo for a shower in the Manga Cafe \n\u30fbGet Hair cut \n\u30fbBuy some new clothes \n\n"
+    },
+    {
+        "role": "user",
+        "content": "start"
+    },
+    {
+        "role": "assistant",
+        "content": "{\n    \"phase\": 1,\n    \"story\": \"You, a Foreigner in Japan, are preparing for a date in Shinjuku station. You need to navigate the bustling station to collect 3 random items for your date. You are excited but also a bit nervous about the adventure that lies ahead.\",\n    \"description_scene\": \"You stand at the entrance of Shinjuku station, surrounded by the bright lights and the constant flow of people. The station is bustling with energy, and you can see people rushing to catch their trains or meeting up with friends. Signs in Japanese characters point in different directions, leading to various shops and platforms.\",\n    \"options\": {\n        \"1\": \"Head towards the shops to collect the first item on your list\",\n        \"2\": \"Ask a station staff for directions to the lockers to put away your baggage before starting the search\",\n        \"3\": \"Look for a map of the station to plan your route to collect the items\",\n        \"4\": \"Take a moment to observe your surroundings and try to spot any familiar landmarks\"\n    }\n}"
+    },
+    {
+        "role": "user",
+        "content": "3"
+    },
+    {
+        "role": "assistant",
+        "content": "{\n    \"phase\": 2,\n    \"story\": \"You decide to look for a map of the station to plan your route to collect the items for your date. You spot a station map not far from where you are standing, and you study it carefully to figure out your next move.\",\n    \"description_scene\": \"The station map is displayed on a large signboard, with colorful markings indicating different shops, platforms, and facilities within Shinjuku station. As you scan the map, you notice the locations of shops selling various items that could be on your list. You also see symbols for lockers, bathrooms, and other amenities.\",\n    \"options\": {\n        \"1\": \"Head towards the shops to collect the first item on your list\",\n        \"2\": \"Ask a station staff for directions to the lockers to put away your baggage before starting the search\",\n        \"3\": \"Visit the nearest shop on the map to start collecting the items for your date\",\n        \"4\": \"Take a photo of the map with your phone for easy reference as you explore the station\"\n    }\n}"
+    }
+]
